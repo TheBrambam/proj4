@@ -1,0 +1,234 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VA Quick App – Benefits</title>
+
+  <style>
+    /* Match App.svelte styles */
+
+    .app {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: system-ui, sans-serif;
+      background: #030303;
+      padding: 1.5rem;
+      color: white;
+    }
+
+    .header {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      margin: 0;
+    }
+
+    /* Optional placeholder where the switch was on the main page */
+    .header-spacer {
+      width: 52px;
+      height: 28px;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .content h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .content p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+    }
+
+    .rounded-button {
+      border: none;
+      border-radius: 9999px;
+      padding: 0.9rem 1.2rem;
+      background: #2563eb;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.15s;
+      width: 100%;
+      text-align: center;
+    }
+
+    .rounded-button:hover {
+      background: #1d4ed8;
+    }
+
+    .rounded-button:active {
+      background: #1e40af;
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <div class="header">
+      <h1>VA Quick App</h1>
+      <!-- Spacer to visually balance where the switch is on the main page -->
+      <!-- <div class="header-spacer"></div>
+    </div>
+
+    <div class="content">
+      <h2>Benefits</h2>
+
+      <p>
+        This page can display information or quick actions related to VA Benefits.
+        You can add links, descriptions, or buttons here to help navigate to
+        specific benefits resources.
+      </p>
+
+      <button class="rounded-button" onclick="window.location.href='index.html'">
+        Back to Main
+      </button>
+    </div>
+  </main>
+</body>
+</html> --> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VA Quick App – Benefits</title>
+
+  <style>
+    /* Match App.svelte styles */
+
+    .app {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: system-ui, sans-serif;
+      background: #030303;
+      padding: 1.5rem;
+      color: white;
+    }
+
+    .header {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      margin: 0;
+    }
+
+    .header-spacer {
+      width: 52px;
+      height: 28px;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .content h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .content p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Rectangular buttons (YES / NO) */
+    .rect-button {
+      width: 100%;
+      padding: 1rem;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      transition: 0.15s;
+    }
+
+    .rect-button:hover {
+      background: #1d4ed8;
+    }
+
+    .rect-button:active {
+      background: #1e40af;
+    }
+
+    /* The existing rounded button */
+    .rounded-button {
+      border: none;
+      border-radius: 9999px;
+      padding: 0.9rem 1.2rem;
+      background: #2563eb;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.15s;
+      width: 100%;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .rounded-button:hover {
+      background: #1d4ed8;
+    }
+
+    .rounded-button:active {
+      background: #1e40af;
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <div class="header">
+      <h1>VA Quick App</h1>
+      <div class="header-spacer"></div>
+    </div>
+
+    <div class="content">
+      <h2>Benefits</h2>
+
+      <p>
+        Has any of your personal information changed since your last visit?
+      </p>
+
+      <!-- YES / NO buttons -->
+      <button class="rect-button" onclick="window.location.href='yes.html'">YES</button>
+      <button class="rect-button" onclick="window.location.href='no.html'">NO</button>
+
+      <!-- Back button -->
+      <button class="rounded-button" onclick="window.location.href='index.html'">
+        Back to Main
+      </button>
+    </div>
+  </main>
+</body>
+</html>

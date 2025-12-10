@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VA Quick App – NO Response</title>
+
+  <style>
+    .app {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: system-ui, sans-serif;
+      background: #030303;
+      padding: 1.5rem;
+      color: white;
+    }
+
+    .header {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      margin: 0;
+    }
+
+    .header-spacer {
+      width: 52px;
+      height: 28px;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .content h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .content p {
+      font-size: 1rem;
+      opacity: 0.9;
+      margin-bottom: 1.5rem;
+    }
+
+    .rect-button {
+      width: 100%;
+      padding: 1rem;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      transition: 0.15s;
+    }
+
+    .rect-button:hover {
+      background: #1d4ed8;
+    }
+
+    .rect-button:active {
+      background: #1e40af;
+    }
+
+    .rounded-button {
+      border: none;
+      border-radius: 9999px;
+      padding: 0.9rem 1.2rem;
+      background: #2563eb;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.15s;
+      width: 100%;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .rounded-button:hover {
+      background: #1d4ed8;
+    }
+
+    .rounded-button:active {
+      background: #1e40af;
+    }
+
+    .feedback {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: #38bdf8; /* Cyan feedback color */
+      min-height: 1.5rem;
+    }
+  </style>
+
+  <script>
+    function giveFeedback(choice) {
+      const msg = document.getElementById('feedback');
+
+      if (choice === 'YES') {
+        msg.textContent = "You selected YES.";
+      } else if (choice === 'NO') {
+        msg.textContent = "You selected NO.";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <main class="app">
+    <div class="header">
+      <h1>VA Quick App</h1>
+      <div class="header-spacer"></div>
+    </div>
+
+    <div class="content">
+      <h2>NO Selection</h2>
+
+      <p>You selected no change to your information. Would you like to submit your VA Form 40-10007?</p>
+
+      <!-- YES / NO Buttons -->
+      <button class="rect-button" onclick="giveFeedback('YES')">YES</button>
+      <button class="rect-button" onclick="giveFeedback('NO')">NO</button>
+
+      <!-- Feedback message -->
+      <div id="feedback" class="feedback"></div>
+
+      <!-- Back button -->
+      <button class="rounded-button" onclick="window.location.href='benefits.html'">
+        Back to Benefits
+      </button>
+    </div>
+  </main>
+</body>
+</html>
